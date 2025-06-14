@@ -1,4 +1,4 @@
-# 👋 ¡Hola! Soy John Mario Echavarría 
+# 👋 ¡Hola! soy Minguito
 
 🔧 Técnico en soporte TI y desarrollador en formación. Apasionado por la tecnología, la documentación clara y el desarrollo web.
 
