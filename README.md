@@ -1,30 +1,15 @@
-# 👋 ¡Hola! soy Minguito
+ 
+M4r10@github
+--------------------------
+💻 Nombre: M4r10
+🎂 Edad: 24 años
+📦 Repos públicos: 8
+⭐ Estrellas recibidas: 0
+🍴 Forks recibidos: 0
+⚡ Commits recientes: 23
 
-🔧 Técnico en soporte TI y desarrollador en formación. Apasionado por la tecnología, la documentación clara y el desarrollo web.
+🧠 Stack: Python, JS, GitHub Actions
+💬 Frase: "Codifico como si el futuro dependiera de ello... porque quizás sí."
 
-💻 Trabajo con herramientas como Laravel, Vue.js, MySQL, Postman y Python. Me interesa crear soluciones prácticas, automatizar tareas y colaborar en proyectos con impacto real.
-
-📚 Siempre aprendiendo, actualmente enfocado en mejorar mis habilidades en desarrollo full stack y prácticas DevOps.
-
----
-
-## 🚀 Proyectos destacados
-
-### 🔊 [PDF to Audio (Python + gTTS)](https://github.com/minguitof/pdf-to-mp3)
-Convierte documentos PDF a archivos de audio con Google Text-to-Speech. Ideal para mejorar accesibilidad y productividad.
-
-### 📝 [To-Do App (Vue.js + Laravel)](https://github.com/minguitof/to-do-list)
-Aplicación web para gestión de tareas. Backend en Laravel, frontend en Vue.js. Manejo de base de datos y CRUD completo.
-
----
-
-## 🛠️ Tecnologías y herramientas
-- **Lenguajes**: JavaScript, PHP, Python, SQL
-- **Frameworks**: Vue.js, Laravel
-- **Otras herramientas**: Postman · Git · WordPress · Google TTS
-- **Sistemas**: Linux · Windows
-
----
-
-## 📫 Contacto
-- [LinkedIn](https://www.linkedin.com/in/john-mario-echavarria-bermudez/)
+🚀 Este README se actualiza automáticamente todos los días
+--------------------------

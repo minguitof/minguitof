@@ -1,0 +1,32 @@
+name: 🛠️ Actualizar README automáticamente
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # todos los días a medianoche UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar script
+        run: python generate.py
+
+      - name: Hacer commit si hay cambios
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add README.md
+          git commit -m "🔄 Actualización automática del README" || echo "Sin cambios"
+          git push
