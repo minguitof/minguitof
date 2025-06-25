@@ -39,14 +39,14 @@ commits = fetch_commit_count()
 content = f""" 
 {NAME}@github
 --------------------------
-💻 Nombre: {NAME}
-🎂 Edad: {age} años
-📦 Repos públicos: {repos}
-⭐ Estrellas recibidas: {stars}
-🍴 Forks recibidos: {forks}
-⚡ Commits recientes: {commits}
+💻 Nombre: {NAME} \n
+🎂 Edad: {age} años \n
+📦 Repos públicos: {repos} \n
+⭐ Estrellas recibidas: {stars} \n
+🍴 Forks recibidos: {forks} \n
+⚡ Commits recientes: {commits} \n
 
-🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions
+🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions \n
 
             ,.-:~:-.                    ,.-·::':¯:¯:`^·,                       ,._., ._
            /':::::::::'`,             ,:´:::::::::::::::::::';'      ,:'/¯/`:,    /::::::::::'/:/':~-.,
