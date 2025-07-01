@@ -31,6 +31,7 @@ jobs:
           git config user.email "actions@github.com"
           git add README.md
           git diff --cached --quiet || git commit -m "🔄 Actualización automática del README"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
