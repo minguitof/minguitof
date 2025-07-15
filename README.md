@@ -10,7 +10,10 @@ M4r10@github
 
 🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions 
 
-<div style="text-align: center;">
+
+![Mi Arte ASCII](/mi_readme_ascii.svg)
+
+<!-- <div style="text-align: center;">
 <pre>                                                                   
                   .. ..                 
             .-=+*%@@@@@@*+=.            
@@ -45,4 +48,4 @@ M4r10@github
 WWWWWWW$=...-+*********+++-..-+WWWWWWWWW
 </pre>
 </div> 
-
+ -->
