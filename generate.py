@@ -86,22 +86,7 @@ commits = fetch_commit_count()
 # 📝 Template tipo neofetch
 # Usamos una "raw string" (r"""...""") para evitar la advertencia de secuencia de escape
 content = rf""" 
-{NAME}@github
---------------------------
-💻 Nombre: {NAME} 
-🎂 Edad: {age} años 
-📦 Repos públicos: {repos} 
-⭐ Estrellas recibidas: {stars} 
-🍴 Forks recibidos: {forks} 
-⚡ Commits recientes: {commits} 
-
-🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions 
-
-<pre>           
-    :)
-</pre>
-
---------------------------
+ ![Mi Arte ASCII](/mi_perfil_readme_5.svg)
 """
 
 # Guardar el archivo
