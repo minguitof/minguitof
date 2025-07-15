@@ -1,2 +1,2 @@
- ![Mi Arte ASCII](/mi_perfil_readme_4.svg)
+ ![Mi Arte ASCII](/mi_perfil_readme_5.svg)
 
