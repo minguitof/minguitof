@@ -10,8 +10,8 @@ M4r10@github
 
 🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions 
 
+<center>
 <pre>                                                                   
-                                        
                   .. ..                 
             .-=+*%@@@@@@*+=.            
           -+%$WWWWWWWWWWWWW@*=.         
@@ -44,5 +44,5 @@ M4r10@github
 %$WWWWW%--=+**************++---$WWWWW$%+
 WWWWWWW$=...-+*********+++-..-+WWWWWWWWW
 </pre>
-
+</center>
 --------------------------
