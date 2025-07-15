@@ -1,4 +1,4 @@
- ![Mi Arte ASCII](/mi_perfil_readme.svg)
+ ![Mi Arte ASCII](/mi_perfil_readme_2.svg)
 
 <!-- <div style="text-align: center;">
 <pre>                                                                   
