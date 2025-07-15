@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1190px" height="867px" font-size="16px">
+<style>
+@font-face {
+  src: local('Consolas'), local('Consolas Bold');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+  -webkit-size-adjust: 109%;
+  size-adjust: 109%;
+}
+.key {fill: #ffa657;}
+.value {fill: #a5d6ff;}
+.header-line {fill: #c9d1d9;}
+.section-title {fill: #ffa657; font-weight: bold;}
+text, tspan {white-space: pre;}
+</style>
+<rect width="100%" height="100%" fill="#161b22"/>
+
+<g id="ascii-panel">
+<text fill="#c9d1d9">
+<tspan x="30.0" y="55.900000000000034">                                                  </tspan>
+<tspan x="30.0" y="75.10000000000004">                                                  </tspan>
+<tspan x="30.0" y="94.30000000000004">                   ...=-------..                  </tspan>
+<tspan x="30.0" y="113.50000000000003">               .=**@@$WWW$WWW$$@*+.               </tspan>
+<tspan x="30.0" y="132.70000000000005">            .-*@$WWWWWWWWWWWWWWWWW@*=.            </tspan>
+<tspan x="30.0" y="151.90000000000003">          .-*$$$$$$WWWWWWWWWWWWWWWWWW$+.          </tspan>
+<tspan x="30.0" y="171.10000000000002">         -%$W$$$WWWWWW$$W$W$WWWWWWWWWWW$+.        </tspan>
+<tspan x="30.0" y="190.30000000000004">        =@WWWWW$$@%%%%%%%%%%%%%@@$$$WWWWW*.       </tspan>
+<tspan x="30.0" y="209.50000000000003">    . .*$WW$$@%**++++++*++++++++***%%@$WWW@-      </tspan>
+<tspan x="30.0" y="228.70000000000002">     .%W$$@%***+++++**+++++++++++++++**%$WW$=     </tspan>
+<tspan x="30.0" y="247.90000000000003">    .*W$$@*****+++++++++++++++++++++++++*$$W$-    </tspan>
+<tspan x="30.0" y="267.1">    =$$$$%*****+++++++++++++++++++++++++*%@$W%.   </tspan>
+<tspan x="30.0" y="286.3">   .%W$$@%****++++++++++++++++++++++++++**@$$$- . </tspan>
+<tspan x="30.0" y="305.5">   .@$$$@%****++++++++++++++++++++++++++**%$$W+ ..</tspan>
+<tspan x="30.0" y="324.70000000000005">   .@$$$%%*******+++++====+++++++++++++++**@$$+ . </tspan>
+<tspan x="30.0" y="343.90000000000003">   .@$$%%%%@@@$$$$@@%*++++++++**%@@@@@%%%***@$+ . </tspan>
+<tspan x="30.0" y="363.1">  ..%$@*%@@@@@@@@@@@@%**++++**%%@@@$@@@@@@%*%$= . </tspan>
+<tspan x="30.0" y="382.3">    *@%*%%%%%%%***%%%%%%*+++*%%%%%%%******%**@- . </tspan>
+<tspan x="30.0" y="401.5">..  =@%****%@@@$@@%%%*%%*+++***%%%@$@@%%***+*%. . </tspan>
+<tspan x="30.0" y="420.70000000000005">....-%%***%@$@%@$%+****%**++*****+%$@%@$@*++*=    </tspan>
+<tspan x="30.0" y="439.90000000000003"> .*%*@*****%%***+++++**%**++***+++++******++*++=. </tspan>
+<tspan x="30.0" y="459.1"> .%%%%*****++++++++++*%%*++++**++++++++++++++*%%- </tspan>
+<tspan x="30.0" y="478.3"> .***%****++++++++++**%**+++++*+++++++++++++++**- </tspan>
+<tspan x="30.0" y="497.5"> .+**%****++++++++++***%%*++*%*+++++++++++++**+*- </tspan>
+<tspan x="30.0" y="516.7">. -*******++++++++++%%%$@%**@@%*++==++++++++***+. </tspan>
+<tspan x="30.0" y="535.9000000000001">  .+**%****+++++++++****+++++***+++++++++++***+.  </tspan>
+<tspan x="30.0" y="555.1"> . -*********+++++++++**+++++++++++++++++++***= ..</tspan>
+<tspan x="30.0" y="574.3">  ..=********++++++++++++++++++++++++++++++**+.   </tspan>
+<tspan x="30.0" y="593.5">    .=++**************%**********+++++++++**+- .  </tspan>
+<tspan x="30.0" y="612.7">   .  ..+**********%@%%%**%***%%@%*+++++++--. .   </tspan>
+<tspan x="30.0" y="631.9000000000001">        -***********%***++++++******+++++=        </tspan>
+<tspan x="30.0" y="651.0999999999999">        .=*********************++++++++*+. ..     </tspan>
+<tspan x="30.0" y="670.3">         .*************+****++++++++++++-         </tspan>
+<tspan x="30.0" y="689.5">         .***********++++++++++++++++++. ..       </tspan>
+<tspan x="30.0" y="708.7">       . .*%%%******+++++++++++++++++*+           </tspan>
+<tspan x="30.0" y="727.9000000000001">         .***%%%******+++++++++++++***+           </tspan>
+<tspan x="30.0" y="747.0999999999999">       .=++****%%%%%%*******+++*******+%=-        </tspan>
+<tspan x="30.0" y="766.3">    .-*@W+-*****%%%%%%%%%%%*********+==WW$@*=.    </tspan>
+<tspan x="30.0" y="785.5">-=*@$WWWW*.-+*****%%%%%%%%*********+--=$WWWWW$%+-.</tspan>
+<tspan x="30.0" y="804.7">WWWWWWWWW@----=+****************++----+WWWWWWWWW$@</tspan>
+<tspan x="30.0" y="823.9000000000001">WWWWWWWWWW=....-=+*********+++++-...--%WWWWWWWWWWW</tspan>
+</text>
+</g> <g id="info-panel">
+<text x="525" y="123.10000000000002" fill="#c9d1d9"><tspan x="525" y="123.10000000000002">M4r10@github</tspan>
+<tspan x="525" y="142.3">---------------------------------------------</tspan>
+<tspan x="525" y="165.34" class="key">💻 Nombre: ..................</tspan><tspan class="value">M4r10</tspan>
+<tspan x="525" y="184.54" class="key">🎂 Edad: ....................</tspan><tspan class="value">24 años</tspan>
+<tspan x="525" y="203.73999999999998" class="key">📍 Ubicación: ...............</tspan><tspan class="value">Itagüí, Colombia</tspan>
+<tspan x="525" y="222.93999999999997" class="key">💡 Intereses: ...............</tspan><tspan class="value">Desarrollo web, Backend, IA, Videojuegos</tspan>
+<tspan x="525" y="251.73999999999995" class="section-title">- Stack</tspan>
+<tspan x="525" y="270.93999999999994">---------------------------------------------</tspan>
+<tspan x="525" y="293.97999999999996" class="key">🧠 Stack: </tspan><tspan class="value">Python, JS, .NET Core, C#, GitHub Actions</tspan>
+<tspan x="525" y="313.17999999999995" class="key">🧠 Lenguajes de Programación: </tspan><tspan class="value">JavaScript, C#</tspan>
+<tspan x="525" y="332.37999999999994" class="key">🌐 Tecnologías Web: </tspan><tspan class="value">HTML, CSS, Vue.js, Node.js</tspan>
+<tspan x="525" y="351.5799999999999" class="key">💾 Bases de Datos: </tspan><tspan class="value">PostgreSQL, MySQL</tspan>
+<tspan x="525" y="370.7799999999999" class="key">🛠️ Herramientas DevOps: </tspan><tspan class="value">GitHub Actions</tspan>
+<tspan x="525" y="399.5799999999999" class="section-title">- Hobbies</tspan>
+<tspan x="525" y="418.7799999999999">---------------------------------------------</tspan>
+<tspan x="525" y="441.81999999999994" class="key">🎮 Hobbies: </tspan><tspan class="value">Lectura, Gimnasio</tspan>
+<tspan x="525" y="470.61999999999995" class="section-title">- Contacto</tspan>
+<tspan x="525" y="489.81999999999994">---------------------------------------------</tspan>
+<tspan x="525" y="512.8599999999999" class="key">📧 Email: </tspan><tspan class="value">tu.email@ejemplo.com</tspan>
+<tspan x="525" y="532.06" class="key">🔗 LinkedIn: </tspan><tspan class="value">tu_usuario_linkedin</tspan>
+<tspan x="525" y="551.26" class="key">🐦 Twitter: </tspan><tspan class="value">tu_usuario_twitter</tspan>
+<tspan x="525" y="570.46" class="key">💬 Discord: </tspan><tspan class="value">tu_usuario_discord</tspan>
+<tspan x="525" y="599.2600000000001" class="section-title">- GitHub Stats</tspan>
+<tspan x="525" y="618.4600000000002">---------------------------------------------</tspan>
+<tspan x="525" y="641.5000000000001" class="key">📦 Total Repositorios: ......</tspan><tspan class="value">10</tspan>
+<tspan x="525" y="660.7000000000002" class="key">⭐ Estrellas Totales: .......</tspan><tspan class="value">0</tspan>
+<tspan x="525" y="679.9000000000002" class="key">🍴 Forks Totales: ...........</tspan><tspan class="value">0</tspan>
+<tspan x="525" y="699.1000000000003" class="key">⚡ Total Commits: ...........</tspan><tspan class="value">27</tspan>
+<tspan x="525" y="718.3000000000003" class="key">👥 Seguidores: ..............</tspan><tspan class="value">5</tspan>
+<tspan x="525" y="737.5000000000003" class="key">📈 Líneas de Código (LOC): </tspan><tspan class="value">446,276</tspan><tspan class="value"> (</tspan><tspan fill="#3fb950">+523</tspan><tspan class="value">,</tspan><tspan> </tspan><tspan fill="#f85149">-76</tspan><tspan class="value">)</tspan>
+</text>
+</g> </svg>
