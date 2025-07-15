@@ -10,7 +10,7 @@ M4r10@github
 
 🧠 Stack: Python, JS, .NET Core, C#, GitHub Actions 
 
-<center>
+<div style="text-align: center;">
 <pre>                                                                   
                   .. ..                 
             .-=+*%@@@@@@*+=.            
@@ -44,5 +44,5 @@ M4r10@github
 %$WWWWW%--=+**************++---$WWWWW$%+
 WWWWWWW$=...-+*********+++-..-+WWWWWWWWW
 </pre>
-</center>
---------------------------
+</div> 
+
