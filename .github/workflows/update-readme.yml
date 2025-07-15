@@ -27,6 +27,8 @@ jobs:
 
       - name: Ejecutar script
         run: python generate.py
+        env: # <-- ¡Aquí está el cambio!
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pasa el token al script de Python
 
       - name: Hacer commit si hay cambios
         run: |
