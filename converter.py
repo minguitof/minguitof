@@ -399,7 +399,7 @@ if __name__ == "__main__":
                 ("Stack", "Python, JS, .NET Core, C#, GitHub Actions"),
                 ("Lenguajes de Programación", "JavaScript, C#"),
                 ("Tecnologías Web", "HTML, CSS, Vue.js, Node.js"), 
-                ("Bases de Datos", "PostgreSQL, MySQL"), 
+                ("Bases de Datos", "MSSQL Server, MySQL"), 
                 ("Herramientas DevOps", "GitHub Actions"), 
             ],
             "extra_line_after": True
