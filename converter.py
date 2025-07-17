@@ -446,8 +446,10 @@ if __name__ == "__main__":
     
     ascii_result = convertir_imagen_a_ascii(ruta_de_tu_foto, ancho_salida=ancho_deseado_ascii)
 
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
+
     if ascii_result:
-        svg_filename = "mi_perfil_readme.svg" 
+        svg_filename = f"mi_perfil_readme_{today_str}.svg" 
         
         # 1. Generar el archivo SVG
         generar_svg_con_info(ascii_result, 
