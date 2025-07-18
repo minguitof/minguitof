@@ -2,6 +2,7 @@ from PIL import Image
 import datetime
 import requests # Necesario para hacer peticiones HTTP a la API de GitHub
 import os       # Necesario para acceder a variables de entorno (como tu token de GitHub)
+import glob
 
 # --- Funciones de Utilidad ---
 
@@ -449,35 +450,54 @@ if __name__ == "__main__":
     today_str = datetime.date.today().strftime("%Y-%m-%d")
 
     if ascii_result:
-        svg_filename = f"mi_perfil_readme_{today_str}.svg" 
+        # --- Lógica para ELIMINAR SVGs antiguos ---
+        # Define el patrón de tus archivos SVG que quieres limpiar
+        svg_pattern_to_delete = "mi_perfil_readme_*.svg"
+        
+        # Nombre del archivo SVG que se va a generar HOY (no debe borrarse)
+        current_day_svg_filename = f"mi_perfil_readme_{today_str}.svg" 
+
+        print(f"Buscando SVGs antiguos con patrón: {svg_pattern_to_delete}")
+        # Obtén la lista de todos los archivos que coinciden con el patrón
+        all_matching_svgs = glob.glob(svg_pattern_to_delete)
+        
+        for old_svg_file in all_matching_svgs:
+            # Solo elimina si el archivo NO es el que estamos a punto de crear o el de hoy
+            if old_svg_file != current_day_svg_filename:
+                try:
+                    os.remove(old_svg_file)
+                    print(f"Eliminado SVG antiguo: {old_svg_file}")
+                except OSError as e:
+                    print(f"Error al eliminar {old_svg_file}: {e}")
+        # --- FIN Lógica para ELIMINAR SVGs antiguos ---
+
+        # Ahora sí, genera el SVG con el nombre del día actual
+        svg_filename = current_day_svg_filename 
         
         # 1. Generar el archivo SVG
-        generar_svg_con_info(ascii_result, 
+        generar_svg_con_info(ascii_result,
                              mis_datos_secciones,
                              output_filename=svg_filename,
                              bg_color=bg_color,
                              text_color=text_color,
-                             key_color=key_color,   
+                             key_color=key_color,
                              value_color=value_color,
                              border_color=border_color,
                              border_width=border_width,
                              border_radius=border_radius
-                             ) 
-        
+                             )
+
         print(f"¡SVG de perfil generado como '{svg_filename}'!")
 
-        # 2. Generar el archivo README.md y embeber el SVG
-        # Este contenido será solo la imagen SVG, como en tu script antiguo.
-        readme_content = rf""" 
+        # 2. Actualizar el archivo README.md para que apunte al nuevo SVG
+        readme_content = rf"""
 ![Perfil GitHub CSV-Dark](./{svg_filename})
 """
-        # Guardar el archivo README.md
         with open("README.md", "w", encoding="utf-8") as f:
             f.write(readme_content)
-        
+
         print(f"¡README.md actualizado con el nuevo SVG!")
         print("Ahora puedes hacer commit y push de '{svg_filename}' y 'README.md' a tu repositorio.")
-        print("Recuerda que el contenido de tu README.md ahora será solo la imagen del perfil.")
 
     else:
         print("\nNo se pudo generar el arte ASCII para el SVG. No se actualizará el README.md.")
