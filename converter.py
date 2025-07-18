@@ -447,37 +447,20 @@ if __name__ == "__main__":
     
     ascii_result = convertir_imagen_a_ascii(ruta_de_tu_foto, ancho_salida=ancho_deseado_ascii)
 
-    today_str = datetime.date.today().strftime("%Y-%m-%d")
+    
 
     if ascii_result:
-        # --- Lógica para ELIMINAR SVGs antiguos ---
-        # Define el patrón de tus archivos SVG que quieres limpiar
-        svg_pattern_to_delete = "mi_perfil_readme_*.svg"
         
-        # Nombre del archivo SVG que se va a generar HOY (no debe borrarse)
-        current_day_svg_filename = f"mi_perfil_readme_{today_str}.svg" 
+        # Define un nombre de archivo SVG fijo, sin fechas.
+        svg_filename = "readme_profile.svg" # <--- ¡CAMBIO CLAVE AQUÍ! Este será el nombre fijo.
 
-        print(f"Buscando SVGs antiguos con patrón: {svg_pattern_to_delete}")
-        # Obtén la lista de todos los archivos que coinciden con el patrón
-        all_matching_svgs = glob.glob(svg_pattern_to_delete)
-        
-        for old_svg_file in all_matching_svgs:
-            # Solo elimina si el archivo NO es el que estamos a punto de crear o el de hoy
-            if old_svg_file != current_day_svg_filename:
-                try:
-                    os.remove(old_svg_file)
-                    print(f"Eliminado SVG antiguo: {old_svg_file}")
-                except OSError as e:
-                    print(f"Error al eliminar {old_svg_file}: {e}")
-        # --- FIN Lógica para ELIMINAR SVGs antiguos ---
-
-        # Ahora sí, genera el SVG con el nombre del día actual
-        svg_filename = current_day_svg_filename 
+        # *** Eliminamos toda la lógica de borrado de SVGs antiguos y el uso de glob ***
+        # Ya no es necesario, porque siempre vamos a sobrescribir el mismo archivo.
         
         # 1. Generar el archivo SVG
         generar_svg_con_info(ascii_result,
                              mis_datos_secciones,
-                             output_filename=svg_filename,
+                             output_filename=svg_filename, # Ahora usa el nombre fijo
                              bg_color=bg_color,
                              text_color=text_color,
                              key_color=key_color,
@@ -486,7 +469,6 @@ if __name__ == "__main__":
                              border_width=border_width,
                              border_radius=border_radius
                              )
-
         print(f"¡SVG de perfil generado como '{svg_filename}'!")
 
         # 2. Actualizar el archivo README.md para que apunte al nuevo SVG
