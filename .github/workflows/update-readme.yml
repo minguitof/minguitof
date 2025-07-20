@@ -2,20 +2,22 @@ name: 🛠️ Actualizar README automáticamente
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # todos los días a medianoche UTC
+    - cron: '0 0 * * *'   # todos los días a medianoche UTC
   workflow_dispatch:
 
 permissions:
-  contents: write  # 🔑 Esto le da permiso al bot para hacer push
+  contents: write   # 🔑 Esto le da permiso al bot para hacer push
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          # Es buena práctica pasar explícitamente el token para asegurar permisos en el checkout
+          token: ${{ secrets.GITHUB_TOKEN }} 
 
       - name: Instalar Python
         uses: actions/setup-python@v5
@@ -24,19 +26,29 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-             pip install requests
-             pip install Pillow 
+          pip install requests
+          pip install Pillow 
 
       - name: Ejecutar script
         run: python converter.py
-        env: # <-- ¡Aquí está el cambio!
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pasa el token al script de Python
+        env:
+          # ¡CORRECCIÓN AQUÍ! Asegúrate de que el nombre de la variable coincida con lo que tu script espera.
+          # Tu script espera 'GITHUB_TOKEN', no 'GH_TOKEN'.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
       - name: Hacer commit si hay cambios
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add README.md
+          
+          # ¡CORRECCIÓN AQUÍ! Añade también el archivo SVG a los cambios.
+          git add README.md readme_profile.svg 
+          
+          # Comitea solo si hay cambios en los archivos añadidos
           git diff --cached --quiet || git commit -m "🔄 Actualización automática del README"
+          
+          # Configura la URL remota con el token para autenticar el push
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          
+          # Finalmente, sube los cambios
           git push
